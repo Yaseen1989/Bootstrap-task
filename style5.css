@@ -1,0 +1,266 @@
+/*
+    Verifi STYLE
+*/
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fafafa;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.7em;
+  color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.navbar {
+  padding: 6px 10px;
+  background: #fff;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 23px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+  box-shadow: none;
+  outline: none !important;
+  border: none;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #ddd;
+  margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+  perspective: 1500px;
+}
+
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  background: #316cba;
+  color: #fff;
+  transition: all 0.6s cubic-bezier(0.945, 0.02, 0.27, 0.665);
+  transform-origin: bottom left;
+}
+
+#sidebar.active {
+  margin-left: -250px;
+  transform: rotateY(100deg);
+}
+
+#sidebar .sidebar-header {
+  padding: 6px;
+  background: #292b66;
+  font-size: 28px;
+  text-align: center;
+}
+
+#sidebar ul.components {
+  border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul.components .active {
+  border-bottom: 1px solid #47748b;
+  border-top: 5px solid red;
+}
+
+#sidebar ul p {
+  color: #fff;
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+}
+
+#sidebar ul li.active > a,
+a[aria-expanded="true"],
+a[aria-expanded="false"] {
+  color: #fff;
+  background: #000;
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+.dropdown-toggle {
+  background: #316cba;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+ul ul a {
+  font-size: 0.9em !important;
+  padding-left: 30px !important;
+  background: #000000;
+}
+
+ul.CTAs {
+  padding: 20px;
+}
+
+ul.CTAs a {
+  text-align: center;
+  font-size: 0.9em !important;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+a.download {
+  background: #fff;
+  color: #7386d5;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+#content {
+  width: 100%;
+  padding: 0px;
+  min-height: 100vh;
+  transition: all 0.3s;
+}
+.content-container {
+  margin: 0 20px;
+}
+
+.content-container .title {
+  font-size: 18pt;
+  font-weight: bold;
+  border-bottom: 1px solid #cccccc;
+  padding: 0 0 10px 0;
+}
+
+.mb-5 {
+  margin: 50px 0 0 0;
+  position: relative;
+  width: 50%;
+  outline: none;
+  padding: 0 0 30 0;
+}
+
+.mb-5 .svg-inline--fa {
+  position: relative;
+  right: 38px;
+}
+
+#sidebarCollapse,
+.cursor {
+  cursor: pointer;
+}
+
+hr {
+  border: 0.5px solid #cccccc;
+  width: 100%;
+}
+.page-link.active {
+  background-color: #db3a22;
+  color: white;
+}
+
+.table {
+  font-size: 13px;
+}
+
+.table td,
+.table th {
+  vertical-align: baseline;
+  text-align: center;
+}
+
+table tr:nth-child(even) {
+  background-color: #e0f0f6;
+}
+
+.table [data-sort] {
+  cursor: pointer;
+}
+/* This is for the sort up and down icon */
+.table [data-sort]::after {
+  margin-left: 0.25rem;
+  content: url("data:image/svg+xml;utf8,<svg width='6' height='10' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M3 0L6 4H0L3 0ZM3 10L0 6H6L3 10Z' fill='%238898aa'/></svg>");
+}
+
+.btn-lg,
+.btn-lg:hover,
+.btn-lg:focus {
+  background: none;
+  color: #000;
+  border: none;
+  box-shadow: none;
+}
+
+.pagination.bottom {
+  position: absolute;
+  right: 20px;
+}
+
+.create-new-profile,
+.create-new-profile:hover {
+  float: left;
+  position: absolute;
+  right: 66px;
+  background-color: #4a90e2;
+  color: white;
+  top: 169px;
+  font-size: 15px;
+  outline: none;
+}
+
+.modal-backdrop {
+  display: none;
+}
+
+.modal-header {
+  background-color: #f5a623;
+  padding: 10px;
+}
+
+.modal-body {
+  padding: 50px;
+  text-align: center;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.modal-footer {
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.ok-to-proceed {
+  background-color: #4a90e2;
+  color: white;
+}
